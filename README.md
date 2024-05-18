@@ -12,7 +12,7 @@ This repository is dedicated to helping you learn Low Level Design (LLD) using p
 2. **Cache System with LRU Eviction Policy**:
    - A cache system that uses the Least Recently Used (LRU) eviction policy.
    - Designed to be extendable and scalable, following best practices in Java.
-   - [View Project](./CacheSystem/README.md)
+   - [View Project](./lru-cache/README.md)
 
 ## Contribution
 Contributions are welcome! If you have an idea for a new project or an improvement to an existing one, please open an issue or submit a pull request.
