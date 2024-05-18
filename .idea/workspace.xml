@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ceb4d71-0451-41bc-be2d-045fb4bec765" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/low-level-design-problems.iml" afterDir="false" />
+    <list default="true" id="6ceb4d71-0451-41bc-be2d-045fb4bec765" name="Changes" comment="Low level design --&gt; Implement Rock, Paper, and Scissor Game.">
       <change afterPath="$PROJECT_DIR$/lru-cache/lru-cache.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lru-cache/src/cache/Cache.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lru-cache/src/cache/DefaultCache.java" afterDir="false" />
@@ -18,11 +12,17 @@
       <change afterPath="$PROJECT_DIR$/lru-cache/src/cache/eviction/LRUEviction.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lru-cache/src/cache/storage/HashMapStorage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lru-cache/src/cache/storage/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="module" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,6 +38,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2g6PiEZNutHBW6nLIASLfvGnFSq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,12 +56,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "21",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RebelAgentSelection">
@@ -88,8 +98,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715015180795</updated>
-      <workItem from="1715015182198" duration="2462000" />
+      <workItem from="1715015182198" duration="4833000" />
     </task>
+    <task id="LOCAL-00001" summary="Low level design --&gt; Implement Rock, Paper, and Scissor Game.">
+      <created>1715724730620</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715724730620</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,5 +123,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Low level design --&gt; Implement Rock, Paper, and Scissor Game." />
+    <option name="LAST_COMMIT_MESSAGE" value="Low level design --&gt; Implement Rock, Paper, and Scissor Game." />
   </component>
 </project>
