@@ -1,6 +1,7 @@
 package com.rishabh;
 
-import com.rishabh.game.Game;
+import com.rishabh.service.game.Game;
+import com.rishabh.service.game.Scoreboard;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,12 +15,16 @@ import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 class PaperRockScissorsGameLauncherTest {
 	@Mock
 	private Game mockGame;
+	
+	private final InputStream originalIn = System.in;
+	private final PrintStream originalOut = System.out;
 	
 	@BeforeEach
 	void setUp() {
@@ -28,97 +33,74 @@ class PaperRockScissorsGameLauncherTest {
 	
 	@AfterEach
 	void tearDown() {
-		mockGame = null;
+		System.setIn(originalIn);
+		System.setOut(originalOut);
 	}
 	
 	@Test
 	void testReadRounds_ValidInput() {
-		// Prepare input for the scanner
 		InputStream inputStream = new ByteArrayInputStream("3\n".getBytes());
 		System.setIn(inputStream);
 		
-		// Test the readRounds method
 		Scanner scanner = new Scanner(System.in);
 		int rounds = PaperRockScissorsGameLauncher.readRounds(scanner);
 		assertEquals(3, rounds);
-		
-		// Clean up
-		System.setIn(System.in);
 	}
 	
 	@Test
 	void testReadRounds_InvalidInput() {
-		// Prepare input for the scanner
 		InputStream inputStream = new ByteArrayInputStream("invalid\n3\n".getBytes());
 		System.setIn(inputStream);
 		
-		// Test the readRounds method
 		Scanner scanner = new Scanner(System.in);
 		int rounds = PaperRockScissorsGameLauncher.readRounds(scanner);
 		assertEquals(3, rounds);
-		
-		// Clean up
-		System.setIn(System.in);
 	}
 	
 	@Test
 	void testReadRounds_RetriesExceeded() {
-		// Prepare input for the scanner
 		InputStream inputStream = new ByteArrayInputStream("invalid\ninvalid\ninvalid\n".getBytes());
 		System.setIn(inputStream);
 		
-		// Test the readRounds method
 		Scanner scanner = new Scanner(System.in);
 		assertThrows(RuntimeException.class, () -> PaperRockScissorsGameLauncher.readRounds(scanner));
+	}
+	
+	@Test
+	void testReadMoves_RetriesExceeded() {
+		InputStream inputStream = new ByteArrayInputStream("invalid\ninvalid\ninvalid\n".getBytes());
+		System.setIn(inputStream);
 		
-		// Clean up
-		System.setIn(System.in);
+		Scanner scanner = new Scanner(System.in);
+		assertThrows(RuntimeException.class, () -> PaperRockScissorsGameLauncher.readMove(scanner));
 	}
 	
 	@Test
 	void testPlayRounds() {
-		// Redirect standard output to capture printed messages
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 		System.setOut(new PrintStream(outputStream));
 		
-		// Mock the Game object
-		when(mockGame.play()).thenReturn("Player 1");
+		when(mockGame.play()).thenReturn("Player 1 wins (You win)!!");
 		
-		// Test the playRounds method
-		PaperRockScissorsGameLauncher.playRounds(1, mockGame);
+		Scoreboard scoreboard = new Scoreboard();
 		
-		// Verify the output
-		String expectedOutput = "\nRound 1\nWinner: Player 1\n";
-		assertEquals(expectedOutput, outputStream.toString());
+		PaperRockScissorsGameLauncher.playRounds(1, mockGame, scoreboard);
 		
-		// Clean up
-		System.setOut(System.out);
+		String expectedOutput = "\nRound 1\nWinner: Player 1 wins (You win)!!\n";
+		assertTrue(outputStream.toString().contains(expectedOutput));
 	}
 	
 	@Test
 	void testMain() {
-		// Prepare input for the scanner
-		InputStream inputStream = new ByteArrayInputStream("1\npaper".getBytes());
+		InputStream inputStream = new ByteArrayInputStream("1\nrock\n".getBytes());
 		System.setIn(inputStream);
 		
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 		System.setOut(new PrintStream(outputStream));
 		
-		// Call the main method
 		PaperRockScissorsGameLauncher.main(new String[0]);
 		
-		// Verify the output
-		String expectedOutput = "\nThanks for playing!\n";
-		assertContains(expectedOutput, outputStream.toString());
-		
-		// Clean up
-		System.setIn(System.in);
-		System.setOut(System.out);
-	}
-	
-	public static void assertContains(String expectedSubstring, String actualString) {
-		if (!actualString.contains(expectedSubstring)) {
-			throw new AssertionError("Expected substring '" + expectedSubstring + "' not found in actual string:\n" + actualString);
-		}
+		String expectedOutput = "Thanks for playing!";
+		assertTrue(outputStream.toString().contains(expectedOutput));
 	}
 }

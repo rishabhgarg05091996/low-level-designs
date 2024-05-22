@@ -1,10 +1,12 @@
 package com.rishabh;
 
-import com.rishabh.game.Game;
-import com.rishabh.game.GameBuilder;
-import com.rishabh.game.PaperRockScissorsStrategy;
-import com.rishabh.players.PlayerFactory;
-import com.rishabh.utils.PlayerType;
+import com.rishabh.model.move.Move;
+import com.rishabh.model.player.Player;
+import com.rishabh.service.game.Game;
+import com.rishabh.service.game.PaperRockScissorsStrategy;
+import com.rishabh.service.player.PlayerFactory;
+import com.rishabh.service.game.Scoreboard;
+import com.rishabh.model.player.PlayerType;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -21,13 +23,20 @@ public class PaperRockScissorsGameLauncher {
 		
 		int rounds = readRounds(scanner);
 		
-		GameBuilder gameBuilder = new GameBuilder(new PlayerFactory(scanner));
+		PlayerFactory playerFactory = new PlayerFactory();
 		
-		// Single Player Game
-		Game game = gameBuilder.withWinningStrategy(new PaperRockScissorsStrategy())
-				.build(PlayerType.HUMAN, PlayerType.COMPUTER);
+		Player player1 = playerFactory.createPlayer(PlayerType.HUMAN, () -> readMove(scanner));
+		Player player2 = playerFactory.createPlayer(PlayerType.COMPUTER, null);
 		
-		playRounds(rounds, game);
+		Game game = new Game(player1, player2, new PaperRockScissorsStrategy());
+		
+		Scoreboard scoreboard = new Scoreboard();
+		
+		playRounds(rounds, game, scoreboard);
+		
+		System.out.println("\nFinal Scores:");
+		System.out.println("Player 1: " + scoreboard.getPlayer1Score());
+		System.out.println("Player 2: " + scoreboard.getPlayer2Score());
 		
 		System.out.println("\nThanks for playing!");
 		scanner.close();
@@ -48,11 +57,27 @@ public class PaperRockScissorsGameLauncher {
 		throw new RuntimeException("Exceeded maximum retries for input.");
 	}
 	
-	protected static void playRounds(int rounds, Game game) {
-		IntStream.rangeClosed(1, rounds)
-				.forEach(round -> {
-					System.out.println("\nRound " + round);
-					System.out.println("Winner: " + game.play());
-				});
+	protected static void playRounds(int rounds, Game game, Scoreboard scoreboard) {
+		IntStream.rangeClosed(1, rounds).forEach(round -> {
+			System.out.println("\nRound " + round);
+			String result = game.play();
+			System.out.println("Winner: " + result);
+			scoreboard.updateScore(result);
+		});
+	}
+	
+	protected static Move readMove(Scanner scanner) {
+		int retries = RETRIES;
+		while (retries > 0) {
+			System.out.print("Enter your move (rock/paper/scissors): ");
+			String input = scanner.next().trim().toUpperCase();
+			try {
+				return Move.valueOf(input);
+			} catch (IllegalArgumentException e) {
+				System.out.println("Invalid move. Please enter a valid move.");
+				retries--;
+			}
+		}
+		throw new RuntimeException("Exceeded maximum retries for input.");
 	}
 }

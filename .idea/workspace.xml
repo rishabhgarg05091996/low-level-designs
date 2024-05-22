@@ -4,15 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ceb4d71-0451-41bc-be2d-045fb4bec765" name="Changes" comment="Low level design --&gt; Implement Rock, Paper, and Scissor Game.">
-      <change afterPath="$PROJECT_DIR$/lru-cache/lru-cache.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lru-cache/src/cache/Cache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lru-cache/src/cache/DefaultCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lru-cache/src/cache/eviction/Eviction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lru-cache/src/cache/eviction/LRUEviction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lru-cache/src/cache/storage/HashMapStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lru-cache/src/cache/storage/Storage.java" afterDir="false" />
+    <list default="true" id="6ceb4d71-0451-41bc-be2d-045fb4bec765" name="Changes" comment="Add Readme file for designing LRU Cache.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/model/move/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/model/player/ComputerPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/model/player/HumanPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/service/game/Scoreboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/service/player/PlayerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/test/java/com/rishabh/model/move/MoveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/test/java/com/rishabh/service/game/GameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/test/java/com/rishabh/service/game/PaperRockScissorsStrategyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/test/java/com/rishabh/service/game/ScoreboardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/PaperRockScissorsGameLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/PaperRockScissorsGameLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/service/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/game/GameBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/game/PaperRockScissorsStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/service/game/PaperRockScissorsStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/game/WinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/service/game/WinningStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/moves/Move.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/moves/Paper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/moves/Rock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/moves/Scissors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/players/ComputerPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/players/HumanPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/model/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/players/PlayerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/utils/PlayerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/main/java/com/rishabh/model/player/PlayerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/test/java/com/rishabh/PaperRockScissorsGameLauncherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PaperRockScissorsGame/src/test/java/com/rishabh/PaperRockScissorsGameLauncherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/test/java/com/rishabh/game/GameTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/test/java/com/rishabh/game/WinningStrategyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/test/java/com/rishabh/moves/MoveTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/src/test/java/com/rishabh/players/PlayerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/PaperRockScissorsGameLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/PaperRockScissorsGameLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/game/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/game/GameBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/game/PaperRockScissorsStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/game/WinningStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/moves/Move.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/moves/Paper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/moves/Rock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/moves/Scissors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/players/ComputerPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/players/HumanPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/players/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/players/PlayerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/classes/com/rishabh/utils/PlayerType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/test-classes/com/rishabh/PaperRockScissorsGameLauncherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/PaperRockScissorsGame/target/test-classes/com/rishabh/PaperRockScissorsGameLauncherTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/test-classes/com/rishabh/game/GameTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/test-classes/com/rishabh/game/WinningStrategyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/target/test-classes/com/rishabh/players/PlayerTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +68,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -45,6 +87,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2g6PiEZNutHBW6nLIASLfvGnFSq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -58,6 +103,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "21",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -70,9 +117,51 @@
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager">
-    <configuration name="PaperRockScissorsGameLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rishabh.PaperRockScissorsGameLauncher" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.rishabh.model" />
+      <recent name="cache.algorithms.doublylinkedlist" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.rishabh.model.move" />
+      <recent name="com.rishabh.service.game" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MoveTest">
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PaperRockScissorsGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rishabh.service.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rishabh.service.game" />
+      <option name="MAIN_CLASS_NAME" value="com.rishabh.service.game.GameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PaperRockScissorsGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rishabh.model.move.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rishabh.model.move" />
+      <option name="MAIN_CLASS_NAME" value="com.rishabh.model.move.MoveTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaperRockScissorsGameLauncherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PaperRockScissorsGame" />
       <extension name="coverage">
         <pattern>
@@ -80,13 +169,50 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.rishabh" />
+      <option name="MAIN_CLASS_NAME" value="com.rishabh.PaperRockScissorsGameLauncherTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaperRockScissorsStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PaperRockScissorsGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rishabh.service.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rishabh.service.game" />
+      <option name="MAIN_CLASS_NAME" value="com.rishabh.service.game.PaperRockScissorsStrategyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreboardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PaperRockScissorsGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rishabh.service.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rishabh.service.game" />
+      <option name="MAIN_CLASS_NAME" value="com.rishabh.service.game.ScoreboardTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PaperRockScissorsGameLauncher" />
+        <item itemvalue="JUnit.MoveTest" />
+        <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.PaperRockScissorsStrategyTest" />
+        <item itemvalue="JUnit.ScoreboardTest" />
+        <item itemvalue="JUnit.PaperRockScissorsGameLauncherTest" />
       </list>
     </recent_temporary>
   </component>
@@ -99,6 +225,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715015180795</updated>
       <workItem from="1715015182198" duration="4833000" />
+      <workItem from="1716058917728" duration="20633000" />
     </task>
     <task id="LOCAL-00001" summary="Low level design --&gt; Implement Rock, Paper, and Scissor Game.">
       <created>1715724730620</created>
@@ -107,7 +234,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715724730620</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Low level design --&gt; Implement LRU Cache.">
+      <created>1716071989944</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716071989944</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add Readme file for designing LRU Cache.">
+      <created>1716073204836</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716073204836</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +267,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Low level design --&gt; Implement Rock, Paper, and Scissor Game." />
-    <option name="LAST_COMMIT_MESSAGE" value="Low level design --&gt; Implement Rock, Paper, and Scissor Game." />
+    <MESSAGE value="Low level design --&gt; Implement LRU Cache." />
+    <MESSAGE value="Add Readme file for designing LRU Cache." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Readme file for designing LRU Cache." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/low_level_design_problems$PaperRockScissorsGameLauncherTest.ic" NAME="PaperRockScissorsGameLauncherTest Coverage Results" MODIFIED="1716415309995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.rishabh.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/low_level_design_problems$ScoreboardTest.ic" NAME="ScoreboardTest Coverage Results" MODIFIED="1716415020893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.rishabh.service.game.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/low_level_design_problems$GameTest.ic" NAME="GameTest Coverage Results" MODIFIED="1716413759074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.rishabh.service.game.*</FILTER>
+    </SUITE>
   </component>
 </project>
