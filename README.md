@@ -14,6 +14,11 @@ This repository is dedicated to helping you learn Low Level Design (LLD) using p
    - Designed to be extendable and scalable, following best practices in Java.
    - [View Project](./lru-cache)
 
+3. **Expense Sharing Application**:
+    - A simplified version of the Splitwise application for managing shared expenses.
+    - Built using Java with an emphasis on object-oriented principles and design patterns.
+    - [View Project](./Splitwise)
+
 ## Contribution
 Contributions are welcome! If you have an idea for a new project or an improvement to an existing one, please open an issue or submit a pull request.
 

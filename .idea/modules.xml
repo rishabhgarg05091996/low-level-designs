@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PaperRockScissorsGame/PaperRockScissorsGame.iml" filepath="$PROJECT_DIR$/PaperRockScissorsGame/PaperRockScissorsGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/low-level-design-problems.iml" filepath="$PROJECT_DIR$/low-level-design-problems.iml" />
       <module fileurl="file://$PROJECT_DIR$/lru-cache/lru-cache.iml" filepath="$PROJECT_DIR$/lru-cache/lru-cache.iml" />
     </modules>
