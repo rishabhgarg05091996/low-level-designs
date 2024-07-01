@@ -5,28 +5,118 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ceb4d71-0451-41bc-be2d-045fb4bec765" name="Changes" comment="Implementing Expense sharing application.">
-      <change afterPath="$PROJECT_DIR$/Splitwise/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/manager/ExpenseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/model/expense/EqualExpense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/model/expense/ExactExpense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/model/expense/Expense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/model/expense/ExpenseMetadata.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/model/expense/ExpenseType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/model/expense/PercentExpense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/model/split/EqualSplit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/model/split/ExactSplit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/model/split/PercentSplit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/model/split/Split.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/service/ExpenseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Splitwise/src/main/java/com/rishabh/splitwise/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/0844ea2821e23a2d43644cf0e2d0a37a86143f7d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0e2fb1fba3ed64a5695d9cb6609543ca791c2f6c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/104f87d6a71062c6abe0b9c4985fc961888e4f60" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/12507e8b86b792673d00aacc232209d54bfa47f2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/133dcfe809b7a29de017dc2c67a04f6d90fb8989" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/18690082df21a8589c1a278d398974053873d157" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/19088c63190d6c062e713fbc5cbe8d4d5ec24eea" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1bc09f42424f686c212ed234969d4b91a0746d78" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2ac4997a19292d11afc405e9629b33294b54b356" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e8ff88f9ba33753ed1c658a01eeffb1942fcd44" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/309622343e0ee642a8837e8e10cec4e2ea5b2de9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31a678da31d4a08832cf510e831fd969fe429e77" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/338afd70e3c9ab35235d0035dea04b7b36d8174e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/395094cf63117968013147acc6015b2c787a6043" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/0/40ffdedaf6040ac6acabb8cbde174e7b8681df5b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/41f7cbb6572893f56a185b7c12227e489e909a0f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/47e6148c5cec8f92b78a84681ed6e93614999c8f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/5818fe82c738f474c5ae270cff7e4c3d03e67ecd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9be23ff4a7fb6d6b4f37643a07225dbeec645a3e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c04a111b13dc00dbb4c61460b5b09a2f84a38b0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a34256c8d4c920fa8f7b811589f7b0f0197ac6a5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a773ced2a14c65a23db4f146a429cf8e92fce769" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae094520d233e8df7bfdb6d20490e5274e63eda6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2fdabbb6923fc3024869eb4a1846e260446564e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b77e358067d9bc8f9fcc9bc5e83bbb48222326eb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b7cfdf5654a355e92fa9ece70f5cdc46d61d3793" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c51ea040b1d5178d300d9e9316b885590a4c6ed5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cfb1296b372aa39285503593fc806c05fa4e7d3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d970143201c517dd3afbdb64dfbdbdac5f499798" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e3ea91351eda3e102d3b6ef386463a85f15f50ef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e5d306ff785f9920459c392c69be2ed24d443e23" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e771a7ab4016280e27f0dc803e03861831fe3aff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e7e28e75824ba6c5c2e5a4290f9e4cebefd59982" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea46c1e20f407145fd8bd22aa2cc4b66d5bb3a4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efc5fc1aa906a2273aee269bbd67d7c1f993ae92" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f78d934d23898a5697e3032afc49a8f681d3e624" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fa704146b589a13f35cabce5a26848ff4b47caa5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fcb6001754f23822f791ed3b330277e9a60181c0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ff17a3ac0a812fb7796cef32bfec9c6ce0cc7348" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ff39057254bd99b89ee1942d97b3fa85e0152aff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/f/ff408955b6a5639f3dd70b5872c23fa65d9fbec1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/8/0844ea2821e23a2d43644cf0e2d0a37a86143f7d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/e/0e2fb1fba3ed64a5695d9cb6609543ca791c2f6c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/0/104f87d6a71062c6abe0b9c4985fc961888e4f60" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/2/12507e8b86b792673d00aacc232209d54bfa47f2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/3/133dcfe809b7a29de017dc2c67a04f6d90fb8989" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/8/18690082df21a8589c1a278d398974053873d157" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/9/19088c63190d6c062e713fbc5cbe8d4d5ec24eea" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/b/1bc09f42424f686c212ed234969d4b91a0746d78" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/a/2ac4997a19292d11afc405e9629b33294b54b356" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2e8ff88f9ba33753ed1c658a01eeffb1942fcd44" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/0/309622343e0ee642a8837e8e10cec4e2ea5b2de9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/1/31a678da31d4a08832cf510e831fd969fe429e77" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/3/338afd70e3c9ab35235d0035dea04b7b36d8174e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/9/395094cf63117968013147acc6015b2c787a6043" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/0/40ffdedaf6040ac6acabb8cbde174e7b8681df5b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/1/41f7cbb6572893f56a185b7c12227e489e909a0f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/7/47e6148c5cec8f92b78a84681ed6e93614999c8f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/8/5818fe82c738f474c5ae270cff7e4c3d03e67ecd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/b/9be23ff4a7fb6d6b4f37643a07225dbeec645a3e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/c/9c04a111b13dc00dbb4c61460b5b09a2f84a38b0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/3/a34256c8d4c920fa8f7b811589f7b0f0197ac6a5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/7/a773ced2a14c65a23db4f146a429cf8e92fce769" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/e/ae094520d233e8df7bfdb6d20490e5274e63eda6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/2/b2fdabbb6923fc3024869eb4a1846e260446564e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/7/b77e358067d9bc8f9fcc9bc5e83bbb48222326eb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/7/b7cfdf5654a355e92fa9ece70f5cdc46d61d3793" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/5/c51ea040b1d5178d300d9e9316b885590a4c6ed5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/f/cfb1296b372aa39285503593fc806c05fa4e7d3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/9/d970143201c517dd3afbdb64dfbdbdac5f499798" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/3/e3ea91351eda3e102d3b6ef386463a85f15f50ef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/5/e5d306ff785f9920459c392c69be2ed24d443e23" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/7/e771a7ab4016280e27f0dc803e03861831fe3aff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/7/e7e28e75824ba6c5c2e5a4290f9e4cebefd59982" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/a/ea46c1e20f407145fd8bd22aa2cc4b66d5bb3a4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/f/efc5fc1aa906a2273aee269bbd67d7c1f993ae92" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/7/f78d934d23898a5697e3032afc49a8f681d3e624" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/a/fa704146b589a13f35cabce5a26848ff4b47caa5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/c/fcb6001754f23822f791ed3b330277e9a60181c0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/f/ff17a3ac0a812fb7796cef32bfec9c6ce0cc7348" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/f/ff39057254bd99b89ee1942d97b3fa85e0152aff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/f/ff408955b6a5639f3dd70b5872c23fa65d9fbec1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/MovieTicketBookingSystem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/MovieTicketBookingDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/booking/model/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/booking/model/BookingStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/booking/model/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/booking/model/Seat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/booking/model/SeatStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/booking/model/SeatType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/booking/model/Show.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/booking/model/Theater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/booking/service/MovieTicketBookingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/notification/model/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/notification/model/NotificationStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/notification/model/NotificationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/notification/service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/payment/model/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/payment/model/PaymentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/payment/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/user/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieTicketBookingSystem/src/main/java/com/rishabh/movieticketbookingsystem/util/IdGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Splitwise/Splitwise.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaperRockScissorsGame/PaperRockScissorsGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PaperRockScissorsGame/PaperRockScissorsGame.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +141,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="kind-kind" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -110,10 +203,23 @@
       <recent name="com.rishabh.service.game" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Driver">
+  <component name="RunManager" selected="Application.MovieTicketBookingDemo">
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rishabh.splitwise.Driver" />
       <module name="Splitwise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieTicketBookingDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rishabh.movieticketbookingsystem.MovieTicketBookingDemo" />
+      <module name="MovieTicketBookingSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rishabh.movieticketbookingsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,28 +269,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScoreboardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PaperRockScissorsGame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rishabh.service.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.rishabh.service.game" />
-      <option name="MAIN_CLASS_NAME" value="com.rishabh.service.game.ScoreboardTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MovieTicketBookingDemo" />
         <item itemvalue="Application.Driver" />
         <item itemvalue="JUnit.MoveTest" />
         <item itemvalue="JUnit.GameTest" />
         <item itemvalue="JUnit.PaperRockScissorsStrategyTest" />
-        <item itemvalue="JUnit.ScoreboardTest" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +290,13 @@
       <workItem from="1715015182198" duration="4833000" />
       <workItem from="1716058917728" duration="22774000" />
       <workItem from="1716497492320" duration="1107000" />
-      <workItem from="1716795861347" duration="5931000" />
+      <workItem from="1716795861347" duration="6755000" />
+      <workItem from="1717394333324" duration="664000" />
+      <workItem from="1717620735532" duration="4814000" />
+      <workItem from="1717793443173" duration="599000" />
+      <workItem from="1717795097775" duration="2413000" />
+      <workItem from="1719465438251" duration="599000" />
+      <workItem from="1719832041449" duration="3448000" />
     </task>
     <task id="LOCAL-00001" summary="Low level design --&gt; Implement Rock, Paper, and Scissor Game.">
       <created>1715724730620</created>
@@ -229,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716416404595</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implementing Expense sharing application.">
+      <created>1717010946997</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717010946997</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

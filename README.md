@@ -19,6 +19,11 @@ This repository is dedicated to helping you learn Low Level Design (LLD) using p
     - Built using Java with an emphasis on object-oriented principles and design patterns.
     - [View Project](./Splitwise)
 
+4. **Movie Ticket Booking System**:
+   - A comprehensive system for booking movie tickets.
+   - Illustrates the use of modular design, payment processing, and notification services.
+   - [View Project](./MovieTicketBookingSystem)
+
 ## Contribution
 Contributions are welcome! If you have an idea for a new project or an improvement to an existing one, please open an issue or submit a pull request.
 
