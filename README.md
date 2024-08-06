@@ -15,17 +15,30 @@ This repository is dedicated to helping you learn Low Level Design (LLD) using p
    - [View Project](./lru-cache)
 
 3. **Expense Sharing Application**:
-    - A simplified version of the Splitwise application for managing shared expenses.
-    - Built using Java with an emphasis on object-oriented principles and design patterns.
-    - [View Project](./Splitwise)
+   - A simplified version of the Splitwise application for managing shared expenses.
+   - Built using Java with an emphasis on object-oriented principles and design patterns.
+   - [View Project](./Splitwise)
 
 4. **Movie Ticket Booking System**:
    - A comprehensive system for booking movie tickets.
    - Illustrates the use of modular design, payment processing, and notification services.
    - [View Project](./MovieTicketBookingSystem)
 
+5. **Online Stock Brokerage System**:
+   - A scalable, extensible, and modular system for online stock brokerage.
+   - Follows object-oriented design principles, SOLID principles, and utilizes the Observer pattern.
+   - Key Features:
+      - User Account Management: Create and manage user accounts with initial balances.
+      - Stock Management: Add, update, and manage stocks.
+      - Order Handling: Place and process buy and sell orders.
+      - Portfolio Management: Maintain and update user portfolios.
+      - Real-time Updates: Observer pattern implementation for real-time stock price updates.
+   - [View Project](./OnlineStockBrokerageSystem)
+
 ## Contribution
+
 Contributions are welcome! If you have an idea for a new project or an improvement to an existing one, please open an issue or submit a pull request.
 
 ## Contact
-For any questions or inquiries, please contact rishabhgarg6257@gmail.com
+
+For any questions or inquiries, please contact [rishabhgarg6257@gmail.com](mailto:rishabhgarg6257@gmail.com).
