@@ -8,10 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="PaperRockScissorsGame" />
-        <module name="OnlineStockBrokerageSystem" />
-        <module name="Splitwise" />
-        <module name="MovieTicketBookingSystem" />
+        <module name="ElevatorSystem" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MovieTicketBookingSystem" target="17" />
+      <module name="OnlineStockBrokerageSystem" target="17" />
+      <module name="Splitwise" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
